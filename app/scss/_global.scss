@@ -50,3 +50,22 @@ body {
     margin-left: 50px;
   }
 }
+
+
+.main-btn{
+  padding: 10px 48px;
+  font-size: 18px;
+  line-height: normal;
+  @extend %Poiret;
+  border-radius: 3px;
+  border: 1px solid $grey;
+  width: fit-content;
+  cursor: pointer;
+}
+.black-btn{
+  color: $white;
+  background-color: $grey;
+}
+.white-btn{
+  color: $grey;
+}

@@ -4,40 +4,45 @@
 @import 'fonts';
 
 // start header
-.header__wrapper{
+.header__wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(180, 184, 184);
-  // align-items: center;
+  // background-color: rgb(180, 184, 184);
   padding: 10px 0;
+  position: relative;
+  z-index: 10;
 }
-.header__left{
+
+.header__left {
   display: flex;
-  // align-items: center;
 }
-.logo{
+
+.logo {
   margin-right: 30px;
   width: 63px;
   height: 60px;
 }
-.menu__list{
+
+.menu__list {
   padding-top: 20px;
   color: $grey;
   font-size: 24px;
   line-height: normal;
   @extend %Poiret;
   display: inline-block;
-  & + .menu__list {
+
+  &+.menu__list {
     margin-left: 70px;
   }
 }
-.header__right{
+
+.header__right {
   display: flex;
-  // align-items: center;
   padding-top: 18px;
 
 }
-.connection{
+
+.connection {
 
   font-size: 20px;
   max-width: 220px;
@@ -45,20 +50,108 @@
   padding: 0 10px;
   text-align: right;
 
-  margin-left: 136px;
+  margin-left: 100px;
 }
-.connection__phone{
+
+.connection__phone {
   margin-bottom: 15px;
 }
-.connection__phone,
-.connection__email{
-  // display: block;
 
-}
 // end header
 
 
+// start section screen
+.screen {
+  margin-top: -100px;
+  // padding-top: 100px;
+  
+  // background-color: #7c7c7c;
 
+}
+
+.screen__wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.screen__left {
+  width: 50%;
+  height: 100%;
+  padding-top: 328px;
+}
+
+.screen__name {
+  font-size: 40px;
+  line-height: normal;
+  @extend %Poiret;
+  margin-bottom: 10px;
+  color: $grey;
+}
+
+.screen__title {
+  @extend %Poiret;
+  font-size: 96px;
+  line-height: normal;
+  color: $grey;
+  margin-bottom: 50px;
+}
+
+.screen__box {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.screen__right {
+  // width: 50%;
+  width: 1020px;
+}
+
+.screen__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.screen__item {
+  width: 344px;
+  
+  // background-image: url('../images/content/screen-tatiana.jpg');
+// height: 100%;
+  height: 944px;
+}
+
+.screen__item-left {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.screen__item-center{
+  background-color: $grey;
+  position: relative;
+}
+.screen__item-center--text{
+  @extend %Bad;
+  font-size: 36px;
+  font-weight: 400;
+  color: $white;
+  transform: rotate(-10deg);
+  position: absolute;
+  left: 37px;
+  bottom: 145px;
+}
+.screen__item-center--img{
+  width: 344px;
+  height: 344px;
+  position: absolute;
+  right: -247px;
+  top: 328px;
+  border-radius: 3px;
+}
+.screen__item-right{
+  max-width: 247px;
+}
+// end section screen
 
 
 
