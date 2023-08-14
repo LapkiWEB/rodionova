@@ -4,7 +4,74 @@
 @import 'fonts';
 
 // start header
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(180, 184, 184);
+  // align-items: center;
+  padding: 10px 0;
+}
+.header__left{
+  display: flex;
+  // align-items: center;
+}
+.logo{
+  margin-right: 30px;
+  width: 63px;
+  height: 60px;
+}
+.menu__list{
+  padding-top: 20px;
+  color: $grey;
+  font-size: 24px;
+  line-height: normal;
+  @extend %Poiret;
+  display: inline-block;
+  & + .menu__list {
+    margin-left: 70px;
+  }
+}
+.header__right{
+  display: flex;
+  // align-items: center;
+  padding-top: 18px;
 
+}
+.connection{
+
+  font-size: 20px;
+  max-width: 220px;
+  width: 100%;
+  padding: 0 10px;
+  text-align: right;
+
+  margin-left: 136px;
+}
+.connection__phone{
+  margin-bottom: 15px;
+}
+.connection__phone,
+.connection__email{
+  // display: block;
+
+}
 // end header
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import 'media';

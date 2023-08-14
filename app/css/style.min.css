@@ -1,3 +1,10 @@
+.menu__list, html,
+body {
+  font-family: "PoiretOne-Regular", sans-serif;
+  font-weight: normal;
+  display: swap;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -60,6 +67,12 @@ a {
 html,
 body {
   height: 100%;
+  color: #252525;
+  position: relative;
+  margin: 0 auto;
+  background-color: #ffffff;
+  font-size: 24px;
+  line-height: normal;
 }
 
 .wrapper {
@@ -86,6 +99,82 @@ body {
 }
 
 .container {
+  max-width: 1886px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 80px;
+}
+
+.social__list {
+  display: inline-block;
+}
+.social__list + .social__list {
+  margin-left: 50px;
+}
+
+@font-face {
+  font-family: "PoiretOne-Regular";
+  src: url("../fonts/PoiretOne-Regular.eot");
+  src: url("../fonts/PoiretOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PoiretOne-Regular.otf") format("otf"), url("../fonts/PoiretOne-Regular.svg#PoiretOne-Regular") format("svg"), url("../fonts/PoiretOne-Regular.woff") format("woff"), url("../fonts/PoiretOne-Regular.woff2") format("woff2"), url("../fonts/PoiretOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BadScript-Regular";
+  src: url("../fonts/BadScript-Regular.eot");
+  src: url("../fonts/BadScript-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BadScript-Regular.otf") format("otf"), url("../fonts/BadScript-Regular.svg#BadScript-Regular") format("svg"), url("../fonts/BadScript-Regular.woff") format("woff"), url("../fonts/BadScript-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgb(180, 184, 184);
+  padding: 10px 0;
+}
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  margin-right: 30px;
+  width: 63px;
+  height: 60px;
+}
+
+.menu__list {
+  padding-top: 20px;
+  color: #252525;
+  font-size: 24px;
+  line-height: normal;
+  display: inline-block;
+}
+.menu__list + .menu__list {
+  margin-left: 70px;
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 18px;
+}
+
+.connection {
+  font-size: 20px;
+  max-width: 220px;
+  width: 100%;
+  padding: 0 10px;
+  text-align: right;
+  margin-left: 136px;
+}
+
+.connection__phone {
+  margin-bottom: 15px;
 }
