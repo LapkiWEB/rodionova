@@ -4,7 +4,7 @@ body {
   @extend %Poiret;
   color: $grey;
   position: relative;
-  // overflow-x: hidden;
+  overflow-x: hidden;
   margin: 0 auto;
   background-color: $white;
   font-size: 24px;
@@ -42,7 +42,10 @@ body {
 //     margin-bottom: 56px;
 //     max-width: fit-content;
 // }
-
+.social{
+  position: relative;
+  z-index: 10;
+}
 .social__list {
   display: inline-block;
 
@@ -54,7 +57,7 @@ body {
 
 .main-btn{
   padding: 10px 48px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: normal;
   @extend %Poiret;
   border-radius: 3px;
@@ -68,4 +71,64 @@ body {
 }
 .white-btn{
   color: $grey;
+  background-color: $white;
+}
+
+
+
+.menu__btn {
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 100;
+  display: none;
+  // background-color: $grey;
+  padding-top: 4px !important;
+  border-radius: 5px;
+  &.active {
+    .row {
+      height: 2px;
+      
+    }
+
+    .row1 {
+      transform: rotate(45deg);
+      position: relative;
+      top: 7px;
+      background-color: $white;
+      transition: all .5s ease 0s;
+    }
+
+    .row2 {
+      transform: rotate(-45deg);
+      position: relative;
+      top: -1px;
+      background-color: $white;
+      transition: all .5s ease 0s;
+    }
+
+    .row3 {
+      opacity: 0;
+    }
+  }
+}
+
+.row {
+  width: 30px;
+  background-color: $grey;
+  height: 2px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  transition: all .3s;
+  margin: 6px auto;
+ 
+}
+.row3 {
+  width: 20px;
+  margin-left: 20px;
+}
+.mobil__social{
+  display: none;
 }

@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   // background-color: rgb(180, 184, 184);
-  padding: 10px 0;
+  padding: 20px 0;
   position: relative;
   z-index: 10;
 }
@@ -52,7 +52,9 @@
 
   margin-left: 100px;
 }
-
+.mob__connection{
+  display: none;
+}
 .connection__phone {
   margin-bottom: 15px;
 }
@@ -62,10 +64,7 @@
 
 // start section screen
 .screen {
-  margin-top: -100px;
-  // padding-top: 100px;
-  
-  // background-color: #7c7c7c;
+  margin-top: -120px;
 
 }
 
@@ -98,59 +97,70 @@
 }
 
 .screen__box {
-  width: 450px;
+  width: 520px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .screen__right {
-  // width: 50%;
   width: 1020px;
+  
+  text-align: center;
 }
 
 .screen__inner {
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
 
 .screen__item {
   width: 344px;
-  
-  // background-image: url('../images/content/screen-tatiana.jpg');
-// height: 100%;
-  height: 944px;
+  height: 100%;
 }
+.screen__item-social{
+  margin-top: 40px;
 
+}
 .screen__item-left {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.screen__item-center{
+
+.screen__item-center {
   background-color: $grey;
   position: relative;
 }
-.screen__item-center--text{
+
+.screen__item-center--text {
   @extend %Bad;
   font-size: 36px;
   font-weight: 400;
   color: $white;
   transform: rotate(-10deg);
   position: absolute;
-  left: 37px;
-  bottom: 145px;
+  left: 30px;
+  bottom: 200px;
 }
-.screen__item-center--img{
+
+.screen__item-center--img {
   width: 344px;
   height: 344px;
   position: absolute;
-  right: -247px;
-  top: 328px;
+  right: -260px;
+  // top: 328px;
+  bottom: 350px;
+  // bottom: 50%;
+  // top: 50%;
   border-radius: 3px;
 }
-.screen__item-right{
+
+.screen__item-right {
   max-width: 247px;
 }
+
 // end section screen
 
 
