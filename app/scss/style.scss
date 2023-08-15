@@ -170,14 +170,53 @@
   font-size: 36px;
   line-height: normal;
   color: $grey;
-  
+
 }
 
 
 // end section offer
 
 
+// start section adv
+.adv{
+  background-color: $grey;
+  color: $white;
+  background-image: url('../images/content/adv-bg.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 630px;
+}
+.adv__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.adv__item{
+  max-width: 390px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+}
+.adv__number{
+  font-size: 80px;
+  line-height: normal;
+  color: #D9D9D9;
+  @extend %Poiret;
+}
+.adv__title{
+  font-size: 32px;
+  @extend %Poiret;
+  min-height: 112px;
+  margin-bottom: 30px;
+  max-width: 300px;
 
+}
+.adv__text{
+  font-size: 20px;
+  line-height: normal;
+  @extend %Poiret;
+}
+// end section adv
 
 
 
