@@ -232,11 +232,15 @@
     order: 6;
   }
 
-  .onebonus__inner {
+  .onebonus__inner,
+  .twobonus__inner {
     grid-template-columns: 1fr 1fr;
   }
 
   .onebonus__item-1 {
+    padding: 50px 90px 50px 30px;
+  }
+  .twobonus__item-2 {
     padding: 50px 90px 50px 30px;
   }
 
@@ -247,12 +251,20 @@
     bottom: 36%;
   }
 
-  .onebonus__item-title {
+  .twobonus__item-1--text {
+    font-size: 16px;
+    width: 300px;
+    right: -50px;
+  }
+
+  .onebonus__item-title,
+  .twobonus__item-title {
     font-size: 48px;
     margin-bottom: 30px;
   }
 
-  .onebonus__item-list {
+  .onebonus__item-list,
+  .twobonus__item-list {
     font-size: 20px;
   }
 }
@@ -305,10 +317,15 @@
   .onebonus__item-1 {
     padding: 50px 40px 50px 30px;
   }
+  .twobonus__item-2 {
+    padding: 50px 40px 50px 30px;
+  }
 
-  .onebonus__item-2--text {
+  .onebonus__item-2--text,
+  .twobonus__item-1--text {
     display: none;
   }
+
 }
 
 @media(max-width: 1100px) {
@@ -373,11 +390,13 @@
 
 
 
-  .onebonus__inner {
+  .onebonus__inner,
+  .twobonus__inner {
     grid-template-columns: 1fr;
   }
 
-  .onebonus__item-2 {
+  .onebonus__item-2,
+  .twobonus__item-1 {
     display: none;
   }
 }
@@ -508,27 +527,33 @@
     font-size: 18px;
   }
 
-  .onebonus__item-1 {
+  .onebonus__item-1,
+  .twobonus__item-2 {
     padding: 30px 20px 30px 20px;
   }
 
-  .onebonus__item-title {
+  .onebonus__item-title,
+  .twobonus__item-title {
     font-size: 32px;
   }
 
-  .onebonus__item-list {
+  .onebonus__item-list,
+  .twobonus__item-list {
     font-size: 18px;
   }
 
-  .onebonus__item-price {
+  .onebonus__item-price,
+  .twobonus__item-price {
     font-size: 18px;
   }
 
-  .onebonus__item-list {
+  .onebonus__item-list,
+  .twobonus__item-list {
     padding-left: 0;
   }
 
-  .onebonus__item-box {
+  .onebonus__item-box,
+  .twobonus__item-box {
     padding-left: 0;
   }
 }
@@ -615,21 +640,25 @@
     padding: 0 15px;
   }
 
-  .onebonus__item-1 {
+  .onebonus__item-1,
+  .twobonus__item-2 {
     padding: 30px 15px 30px 15px;
   }
 
-  .onebonus__item-box {
+  .onebonus__item-box,
+  .twobonus__item-box {
     justify-content: center;
     flex-wrap: wrap;
 
   }
 
-  .onebonus__btn {
+  .onebonus__btn,
+  .twobonus__btn {
     margin-bottom: 30px;
   }
 
-  .onebonus__item-price {
+  .onebonus__item-price,
+  .twobonus__item-price {
     width: 100%;
     text-align: center;
   }
