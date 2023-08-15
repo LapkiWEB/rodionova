@@ -173,6 +173,14 @@
     width: 506px;
     padding-left: 160px;
   }
+
+  .offer__title {
+    font-size: 24px;
+  }
+
+  .offer__text {
+    font-size: 20px;
+  }
 }
 
 @media(max-width: 1050px) {
@@ -224,6 +232,14 @@
   .header__menu.active {
     width: 300px;
     padding-left: 55px;
+  }
+
+  .offer__title {
+    font-size: 20px;
+  }
+
+  .offer__text {
+    font-size: 18px;
   }
 }
 
@@ -301,9 +317,10 @@
   .screen__item-left {
     width: 200px;
   }
-    .screen__wrapper{
-      height: 95vh;
-    }
+
+  .screen__wrapper {
+    height: 95vh;
+  }
 }
 
 @media(max-width: 400px) {}

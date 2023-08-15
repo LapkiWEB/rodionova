@@ -164,7 +164,17 @@
 // end section screen
 
 
+// start section offer
+.offer__title{
+  @extend %Bad;
+  font-size: 36px;
+  line-height: normal;
+  color: $grey;
+  
+}
 
+
+// end section offer
 
 
 
