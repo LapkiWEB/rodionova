@@ -52,9 +52,11 @@
 
   margin-left: 100px;
 }
-.mob__connection{
+
+.mob__connection {
   display: none;
 }
+
 .connection__phone {
   margin-bottom: 15px;
 }
@@ -105,7 +107,7 @@
 
 .screen__right {
   width: 1020px;
-  
+
   text-align: center;
 }
 
@@ -119,10 +121,12 @@
   width: 344px;
   height: 100%;
 }
-.screen__item-social{
+
+.screen__item-social {
   margin-top: 40px;
 
 }
+
 .screen__item-left {
   background-repeat: no-repeat;
   background-size: cover;
@@ -165,7 +169,7 @@
 
 
 // start section offer
-.offer__title{
+.offer__title {
   @extend %Bad;
   font-size: 36px;
   line-height: normal;
@@ -178,7 +182,7 @@
 
 
 // start section adv
-.adv{
+.adv {
   background-color: $grey;
   color: $white;
   background-image: url('../images/content/adv-bg.jpg');
@@ -188,22 +192,26 @@
   padding-top: 50px;
   padding-bottom: 630px;
 }
-.adv__inner{
+
+.adv__inner {
   display: flex;
   justify-content: space-between;
 }
-.adv__item{
+
+.adv__item {
   max-width: 390px;
   padding-right: 20px;
   margin-bottom: 30px;
 }
-.adv__number{
+
+.adv__number {
   font-size: 80px;
   line-height: normal;
   color: #D9D9D9;
   @extend %Poiret;
 }
-.adv__title{
+
+.adv__title {
   font-size: 32px;
   @extend %Poiret;
   min-height: 112px;
@@ -211,13 +219,124 @@
   max-width: 300px;
 
 }
-.adv__text{
+
+.adv__text {
   font-size: 20px;
   line-height: normal;
   @extend %Poiret;
 }
+
 // end section adv
 
+
+// start section tetatet
+.tetatet__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.tetatet__item {
+
+}
+
+.tetatet__item-calc {
+  height: calc(100vw / 3);
+}
+
+.tetatet__item-img {
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tetatet__item-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.tetatet__item-box {
+  max-width: 340px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.tetatet__item-text {
+
+  padding: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+
+}
+
+.tetatet__social {
+  position: relative;
+
+  &::before {
+    content: 'Напишите мне';
+    @extend %Bad;
+    transform: rotate(-10deg);
+    position: absolute;
+    left: -125px;
+    top: -70px;
+
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: -30px;
+    background-image: url('../images/icons/tetatet-arrow.png');
+    width: 47px;
+    height: 47px;
+  }
+}
+
+.tetatet__text {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.tetatet__text-padding--bottom{
+  padding-bottom: 150px;
+}
+.tetatet__text-wrapper {
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.tetatet__social-list {
+  display: inline-block;
+
+  &+.tetatet__social-list {
+    margin-left: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// end section tetatet
 
 
 

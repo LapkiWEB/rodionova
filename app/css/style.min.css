@@ -1,11 +1,12 @@
-.adv__text, .adv__title, .adv__number, .screen__title, .screen__name, .menu__list, .main-btn, html,
+@charset "UTF-8";
+.adv__text, .adv__title, .adv__number, .screen__title, .screen__name, .menu__list, .main-btn, .title, html,
 body {
   font-family: "PoiretOne-Regular", sans-serif;
   font-weight: normal;
   display: swap;
 }
 
-.offer__title, .screen__item-center--text {
+.tetatet__social::before, .offer__title, .screen__item-center--text {
   font-family: "BadScript-Regular", sans-serif;
   font-weight: normal;
   display: swap;
@@ -113,6 +114,15 @@ body {
 
 .section {
   padding: 50px 0;
+}
+
+.title {
+  font-size: 48px;
+  line-height: normal;
+  margin-bottom: 30px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .social {
@@ -436,6 +446,105 @@ body {
   line-height: normal;
 }
 
+.tetatet__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[2];
+  grid-template-rows: repeat(2, auto);
+}
+
+.tetatet__item-calc {
+  height: 33.3333333333vw;
+}
+
+.tetatet__item-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tetatet__item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tetatet__item-box {
+  max-width: 340px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.tetatet__item-text {
+  padding: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.tetatet__social {
+  position: relative;
+}
+.tetatet__social::before {
+  content: "Напишите мне";
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  position: absolute;
+  left: -125px;
+  top: -70px;
+}
+.tetatet__social::after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: -30px;
+  background-image: url("../images/icons/tetatet-arrow.png");
+  width: 47px;
+  height: 47px;
+}
+
+.tetatet__text {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.tetatet__text-padding--bottom {
+  padding-bottom: 150px;
+}
+
+.tetatet__text-wrapper {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.tetatet__social-list {
+  display: inline-block;
+}
+.tetatet__social-list + .tetatet__social-list {
+  margin-left: 50px;
+}
+
 @media (max-width: 1850px) {
   .screen__right {
     width: 808px;
@@ -496,6 +605,9 @@ body {
   }
   .adv__number {
     font-size: 64px;
+  }
+  .tetatet__item-text {
+    padding: 50px;
   }
 }
 @media (max-width: 1450px) {
@@ -584,6 +696,52 @@ body {
     max-width: 100%;
     margin-bottom: 15px;
   }
+  .tetatet__inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (auto)[3];
+    grid-template-rows: repeat(3, auto);
+  }
+  .tetatet__item {
+    height: 50vw;
+  }
+  .tetatet__item-text {
+    padding: 30px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .tetatet__item-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .tetatet__item-2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .tetatet__item-3 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .tetatet__item-4 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .tetatet__item-5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .tetatet__item-6 {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
 }
 @media (max-width: 1300px) {
   .screen__right {
@@ -643,6 +801,18 @@ body {
     padding-bottom: 50px;
     background-image: none;
   }
+  .tetatet__item-text {
+    height: auto;
+  }
+  .tetatet__social-list + .tetatet__social-list {
+    margin-left: 30px;
+  }
+  .tetatet__item-3 {
+    display: none;
+  }
+  .tetatet__item-5 {
+    display: none;
+  }
 }
 @media (max-width: 800px) {
   .screen__name {
@@ -670,6 +840,44 @@ body {
   .offer__text {
     font-size: 18px;
   }
+  .tetatet__inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (auto)[4];
+    grid-template-rows: repeat(4, auto);
+  }
+  .tetatet__item {
+    height: auto;
+  }
+  .tetatet__item-box {
+    padding: 30px 40px 0px 40px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .tetatet__text-padding--bottom {
+    padding-bottom: 50px;
+  }
+  .tetatet__text-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tetatet__item-text {
+    padding: 0 40px;
+    margin-bottom: 30px;
+  }
+  .tetatet__item-1 {
+    height: 100vw;
+  }
+  .tetatet__btn {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 700px) {
   .container {
@@ -685,6 +893,20 @@ body {
     font-size: 24px;
   }
   .adv__text {
+    font-size: 18px;
+  }
+  .tetatet__item-box {
+    padding: 30px 20px 0px 20px;
+    font-size: 24px;
+  }
+  .tetatet__text-padding--bottom {
+    padding-bottom: 50px;
+  }
+  .tetatet__item-text {
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+  .tetatet__text {
     font-size: 18px;
   }
 }
@@ -728,6 +950,11 @@ body {
     position: relative;
     z-index: 1;
   }
+  .tetatet__text-wrapper {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 @media (max-width: 500px) {
   .container {
@@ -741,6 +968,15 @@ body {
   }
   .screen__wrapper {
     height: 95vh;
+  }
+  .tetatet__item-box {
+    padding: 30px 15px 0px 15px;
+  }
+  .tetatet__text-padding--bottom {
+    padding-bottom: 50px;
+  }
+  .tetatet__item-text {
+    padding: 0 15px;
   }
 }
 @media (max-height: 900px) {
