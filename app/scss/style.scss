@@ -230,38 +230,42 @@
 
 
 // start section tetatet
-.tetatet__inner {
+.tetatet__inner,
+.group__inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
 }
 
-.tetatet__item-calc {
+.tetatet__item-calc,
+.group__item-calc {
   height: calc(100vw / 3);
 }
 
-.tetatet__item-img {
-
+.tetatet__item-img,
+.group__item-img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.tetatet__item-title {
+.tetatet__item-title,
+.group__item-title {
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
 
-.tetatet__item-box {
+.tetatet__item-box,
+.group__item-box {
   max-width: 340px;
   text-align: center;
   margin-bottom: 0;
 }
 
-.tetatet__item-text {
-
+.tetatet__item-text,
+.group__item-text {
   padding: 70px;
   display: flex;
   flex-wrap: wrap;
@@ -292,7 +296,8 @@
   }
 }
 
-.tetatet__text {
+.tetatet__text,
+.group__text {
   margin-bottom: 30px;
   font-size: 20px;
 }
@@ -301,7 +306,8 @@
   padding-bottom: 150px;
 }
 
-.tetatet__text-wrapper {
+.tetatet__text-wrapper,
+.group__text-wrapper {
   width: 100%;
   height: fit-content;
 
@@ -392,8 +398,6 @@
 }
 
 // end section onebonus
-
-
 
 
 
