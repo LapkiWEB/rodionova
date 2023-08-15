@@ -81,6 +81,10 @@
   .tetatet__item-text {
     padding: 50px;
   }
+
+  .onebonus__item-1 {
+    padding: 50px 90px 50px 50px;
+  }
 }
 
 @media(max-width: 1450px) {
@@ -218,6 +222,30 @@
   .tetatet__item-6 {
     order: 6;
   }
+
+  .onebonus__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .onebonus__item-1 {
+    padding: 50px 90px 50px 30px;
+  }
+
+  .onebonus__item-2--text {
+    font-size: 16px;
+    width: 300px;
+    left: -86px;
+    bottom: 36%;
+  }
+
+  .onebonus__item-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  .onebonus__item-list {
+    font-size: 20px;
+  }
 }
 
 @media(max-width: 1300px) {
@@ -264,6 +292,14 @@
   .adv__title {
     min-height: fit-content;
   }
+
+  .onebonus__item-1 {
+    padding: 50px 40px 50px 30px;
+  }
+
+  .onebonus__item-2--text {
+    display: none;
+  }
 }
 
 @media(max-width: 1050px) {
@@ -290,7 +326,7 @@
   }
 
   .adv {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     background-image: none;
   }
 
@@ -307,6 +343,14 @@
   }
 
   .tetatet__item-5 {
+    display: none;
+  }
+
+  .onebonus__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .onebonus__item-2 {
     display: none;
   }
 }
@@ -388,6 +432,7 @@
 }
 
 @media(max-width: 700px) {
+
   .container {
     padding: 0 20px;
   }
@@ -424,6 +469,30 @@
 
   .tetatet__text {
     font-size: 18px;
+  }
+
+  .onebonus__item-1 {
+    padding: 30px 20px 30px 20px;
+  }
+
+  .onebonus__item-title {
+    font-size: 32px;
+  }
+
+  .onebonus__item-list {
+    font-size: 18px;
+  }
+
+  .onebonus__item-price {
+    font-size: 18px;
+  }
+
+  .onebonus__item-list {
+    padding-left: 0;
+  }
+
+  .onebonus__item-box {
+    padding-left: 0;
   }
 }
 
@@ -508,6 +577,29 @@
   .tetatet__item-text {
     padding: 0 15px;
   }
+
+  .onebonus__item-1 {
+    padding: 30px 15px 30px 15px;
+  }
+
+  .onebonus__item-box {
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+
+  .onebonus__btn {
+    margin-bottom: 30px;
+  }
+
+  .onebonus__item-price {
+    width: 100%;
+    text-align: center;
+  }
+
+  // .onebonus__btn{
+  //   margin: 0 auto;
+  // }
 }
 
 @media(max-width: 400px) {}

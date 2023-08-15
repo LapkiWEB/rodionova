@@ -1,12 +1,12 @@
 @charset "UTF-8";
-.adv__text, .adv__title, .adv__number, .screen__title, .screen__name, .menu__list, .main-btn, .title, html,
+.onebonus__item-price, .adv__text, .adv__title, .adv__number, .screen__title, .screen__name, .menu__list, .main-btn, .title, html,
 body {
   font-family: "PoiretOne-Regular", sans-serif;
   font-weight: normal;
   display: swap;
 }
 
-.tetatet__social::before, .offer__title, .screen__item-center--text {
+.onebonus__item-2--text, .tetatet__social::before, .offer__title, .screen__item-center--text {
   font-family: "BadScript-Regular", sans-serif;
   font-weight: normal;
   display: swap;
@@ -545,6 +545,81 @@ body {
   margin-left: 50px;
 }
 
+.onebonus {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+.onebonus__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.onebonus__item-1 {
+  padding: 50px 90px 50px 70px;
+}
+
+.onebonus__item-title {
+  color: #ffffff;
+  margin-bottom: 50px;
+  font-size: 64px;
+}
+
+.onebonus__item-text {
+  margin-bottom: 50px;
+}
+
+.onebonus__item-list {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+.onebonus__item-list::before {
+  content: "·";
+  left: 15px;
+  top: 5px;
+}
+
+.onebonus__item-box {
+  max-width: 500px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+}
+
+.onebonus__item-price {
+  font-size: 20px;
+  line-height: normal;
+}
+
+.onebonus__item-2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.onebonus__item-2--text {
+  position: absolute;
+  left: -180px;
+  bottom: 10%;
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  font-size: 24px;
+  width: 450px;
+}
+
 @media (max-width: 1850px) {
   .screen__right {
     width: 808px;
@@ -608,6 +683,9 @@ body {
   }
   .tetatet__item-text {
     padding: 50px;
+  }
+  .onebonus__item-1 {
+    padding: 50px 90px 50px 50px;
   }
 }
 @media (max-width: 1450px) {
@@ -742,6 +820,26 @@ body {
         -ms-flex-order: 6;
             order: 6;
   }
+  .onebonus__inner {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .onebonus__item-1 {
+    padding: 50px 90px 50px 30px;
+  }
+  .onebonus__item-2--text {
+    font-size: 16px;
+    width: 300px;
+    left: -86px;
+    bottom: 36%;
+  }
+  .onebonus__item-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+  .onebonus__item-list {
+    font-size: 20px;
+  }
 }
 @media (max-width: 1300px) {
   .screen__right {
@@ -779,6 +877,12 @@ body {
     min-height: -moz-fit-content;
     min-height: fit-content;
   }
+  .onebonus__item-1 {
+    padding: 50px 40px 50px 30px;
+  }
+  .onebonus__item-2--text {
+    display: none;
+  }
 }
 @media (max-width: 1050px) {
   .container {
@@ -798,7 +902,7 @@ body {
     padding-left: 85px;
   }
   .adv {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     background-image: none;
   }
   .tetatet__item-text {
@@ -811,6 +915,13 @@ body {
     display: none;
   }
   .tetatet__item-5 {
+    display: none;
+  }
+  .onebonus__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .onebonus__item-2 {
     display: none;
   }
 }
@@ -909,6 +1020,24 @@ body {
   .tetatet__text {
     font-size: 18px;
   }
+  .onebonus__item-1 {
+    padding: 30px 20px 30px 20px;
+  }
+  .onebonus__item-title {
+    font-size: 32px;
+  }
+  .onebonus__item-list {
+    font-size: 18px;
+  }
+  .onebonus__item-price {
+    font-size: 18px;
+  }
+  .onebonus__item-list {
+    padding-left: 0;
+  }
+  .onebonus__item-box {
+    padding-left: 0;
+  }
 }
 @media (max-width: 600px) {
   .header__menu.active {
@@ -977,6 +1106,23 @@ body {
   }
   .tetatet__item-text {
     padding: 0 15px;
+  }
+  .onebonus__item-1 {
+    padding: 30px 15px 30px 15px;
+  }
+  .onebonus__item-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .onebonus__btn {
+    margin-bottom: 30px;
+  }
+  .onebonus__item-price {
+    width: 100%;
+    text-align: center;
   }
 }
 @media (max-height: 900px) {

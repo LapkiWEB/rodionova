@@ -236,10 +236,6 @@
   grid-template-rows: repeat(2, auto);
 }
 
-.tetatet__item {
-
-}
-
 .tetatet__item-calc {
   height: calc(100vw / 3);
 }
@@ -270,8 +266,6 @@
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-
-
 }
 
 .tetatet__social {
@@ -302,9 +296,11 @@
   margin-bottom: 30px;
   font-size: 20px;
 }
-.tetatet__text-padding--bottom{
+
+.tetatet__text-padding--bottom {
   padding-bottom: 150px;
 }
+
 .tetatet__text-wrapper {
   width: 100%;
   height: fit-content;
@@ -322,23 +318,80 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // end section tetatet
 
+// start section onebonus
+.onebonus {
+  background-color: $grey;
+  color: $white;
+}
 
+.onebonus__inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  // grid-template-rows: repeat(1, auto);
+
+}
+
+.onebonus__item-1 {
+  padding: 50px 90px 50px 70px;
+}
+
+.onebonus__item-title {
+  color: $white;
+  margin-bottom: 50px;
+  font-size: 64px;
+}
+
+.onebonus__item-text {
+  margin-bottom: 50px;
+}
+
+.onebonus__item-list {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+
+  &::before {
+    content: '·';
+    left: 15px;
+    top: 5px;
+  }
+}
+
+.onebonus__item-box {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.onebonus__item-price {
+  @extend %Poiret;
+  font-size: 20px;
+  line-height: normal;
+
+}
+
+.onebonus__item-2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.onebonus__item-2--text{
+  position: absolute;
+  left: -180px;
+  bottom: 10%;
+  transform: rotate(-10deg);
+  @extend %Bad;
+  font-size: 24px;
+  width: 450px;
+}
+
+// end section onebonus
 
 
 
