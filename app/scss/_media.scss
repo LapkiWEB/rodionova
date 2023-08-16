@@ -482,10 +482,15 @@
   .tetatet__btn {
     margin: 0 auto;
   }
+  .stages__inner{
+    justify-content: center;
+  }
 }
 
 @media(max-width: 700px) {
-
+  .title{
+    font-size: 32px;
+  }
   .container {
     padding: 0 20px;
   }
@@ -555,6 +560,10 @@
   .onebonus__item-box,
   .twobonus__item-box {
     padding-left: 0;
+  }
+  .stages__item{
+    padding-right: 0;
+    max-width: fit-content;
   }
 }
 

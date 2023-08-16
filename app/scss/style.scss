@@ -394,7 +394,8 @@
   background-repeat: no-repeat;
   position: relative;
 }
-.onebonus__item-2--text{
+
+.onebonus__item-2--text {
   position: absolute;
   left: -180px;
   bottom: 10%;
@@ -416,6 +417,7 @@
 .twobonus__item-2 {
   padding: 50px 70px 50px 300px;
 }
+
 .twobonus__item-1--text {
   position: absolute;
   right: -280px;
@@ -425,7 +427,34 @@
   font-size: 24px;
   width: 450px;
 }
+
 // end section twobonus
 
+
+// start section stages
+.stages__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.stages__item {
+  max-width: 330px;
+  width: 100%;
+  padding-right: 30px;
+  margin-bottom: 50px;
+}
+.stages__item-title,
+.stages__item-text{
+ color: $grey;
+}
+.stages__box{
+ 
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+// end section stages
 
 @import 'media';
