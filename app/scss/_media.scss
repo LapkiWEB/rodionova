@@ -41,7 +41,16 @@
   }
 }
 
-@media(max-width: 1700px) {}
+@media(max-width: 1700px) {
+  .stages__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stages__item {
+    max-width: 400px;
+  }
+}
 
 @media(max-width: 1600px) {
   .container {
@@ -407,6 +416,15 @@
     font-size: 24px;
   }
 
+  // .stages__inner {
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  // }
+
+  .stages__item {
+    max-width: 350px;
+  }
+
 }
 
 @media(max-width: 1100px) {
@@ -455,6 +473,10 @@
 
   .problems__text {
     font-size: 20px;
+  }
+
+  .stages__inner {
+    justify-content: flex-start;
   }
 }
 
@@ -638,6 +660,9 @@
 
   .stages__inner {
     justify-content: center;
+  }
+  .stages__item{
+    max-width: fit-content;
   }
 }
 
