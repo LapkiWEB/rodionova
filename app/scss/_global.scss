@@ -11,6 +11,23 @@ body {
   line-height: normal;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $grey;
+  position: relative;
+  // border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  // background-color: $green;
+  background: $white;
+  border-radius: 5px;
+  border: 1px solid $grey;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
